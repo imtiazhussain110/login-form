@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./Images/alan-jones-OQsxdghBKrU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+    width: 30vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+    box-shadow: 0px 1px 10px 1px rgb(240, 166, 166);
+    border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+hr {
+    border: none;
+    border-bottom: 2px solid red;
+    margin-top: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: white;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.submit-btn {
+    padding: 0.8rem 2.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    border: none;
+    transition: 0.1s ease-in;
+}
+
+.submit-btn:hover {
+    outline: solid red;
+    color: rgba(255, 255, 255, 1);
 }
